@@ -3,6 +3,7 @@ const { Post, Comment, User } = require("../models");
 
 router.get("/", async (req, res) => {
     // get all posts for the homepage
+
 });
 
 router.get("/post/:id", async (req, res) => {
