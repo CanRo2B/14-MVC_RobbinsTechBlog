@@ -4,6 +4,7 @@ const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
     // we want to go ahead and finishing the routing to get all the posts
+    
 });
 
 router.get("/new", withAuth, (req, res) => {
