@@ -1,8 +1,14 @@
 // You need the following required:
 // path
+const path = require("path");
 // express
+const express = require("express");
 // express-handlebars
+const exphbs = require("express-handlebars");
 // helpers (if you are putting timestamps on posts)
+const session = require("express-session");
+const helpers = require("./utils/helper");
+
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -12,6 +18,13 @@ const SequelizeStore = require("connect-session-sequelize")(session.Store);
 
 const sess = {
     // For password sessions
+    secret: "super secret",
+    cookie: {},
+    resave: false,
+    saveUninitialized: true,
+    store: new SequelizeStore({
+    db: sequelize
+  })
 };
 
 app.use(session(sess));
