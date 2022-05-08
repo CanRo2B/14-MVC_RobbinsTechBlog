@@ -27,8 +27,8 @@ Open up the Integrated Terminal at the server.js within the file.  Type npm star
 [Video Link]()
 
 ## Acknowledgements
-A huge thank you to the Veronica the Amazing TA and the other instructional staff, John and Andy, in our UCF Bootcamp class.
-I relied heavily on the README and the module lessons throughout the week, specifically, 22-25 and the mini-project module 28.  
+A huge thank you to the Veronica the Amazing TA and the other instructional staff, John and Andy, in our UCF Bootcamp class. I relied heavily on our start-up video in which she described and gave us input as to what to do.  
+I relied heavily on the mini-project in Module 28 Unit 14, and the module lessons throughout the week.
 
 ## Contact Me
 - [Github Link](https://github.com/CanRo2B)
