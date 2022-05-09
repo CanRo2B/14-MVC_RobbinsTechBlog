@@ -8,7 +8,7 @@ router.get("/", async (req, res) => {
             include: [{ model: User }],
         });
         const posts = allPosts.map((post) => this.post.get({plain: true}));
-        res.render('dashboard', { 
+        res.render('posts', { 
             posts, 
             logged_in: req.session.logged_in 
         });
