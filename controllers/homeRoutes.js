@@ -70,7 +70,7 @@ router.get("/post/:id", (req, res) => {
         }, 
         {
             model: User,
-            attributes: ["uersname"]
+            attributes: ["username"]
         }
     ]
     })

@@ -7,7 +7,7 @@ const postInfo = require('./postInfo');
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
 
-  const users = await User.bulkCreate(userInfo, {
+  const user = await User.bulkCreate(userInfo, {
     individualHooks: true,
     returning: true,
   });
@@ -15,7 +15,7 @@ const seedDatabase = async () => {
   for (const post of postInfo) {
     await Post.create({
       ...post,
-      user_id: users[Math.floor(Math.random() * user.length)].id,
+      user_id: user[Math.floor(Math.random() * user.length)].id,
     });
   }
 
