@@ -1,5 +1,6 @@
 const router = require("express").Router();
 const { Post } = require("../models");
+const { beforeFindAfterExpandIncludeAll } = require("../models/User");
 const withAuth = require("../utils/auth");
 
 router.get("/", withAuth, async (req, res) => {
@@ -16,8 +17,8 @@ router.get("/", withAuth, async (req, res) => {
 
 router.get("/new", withAuth, (req, res) => {
 // for showing new posts to the user
-
-})
+  res.render("new-post");
+});
 
 router.get("/edit/:id", withAuth, async (res, req) => {
     // To be able to find posts by primary key and render the edit post on the dashboard
